@@ -1,0 +1,155 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet_2.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap-tooltip.js"></script>
+	<script src="js/bootstrap-popover.js"></script>
+	<script>
+		$(document).ready(function() {
+			
+			$('.dropdown-toggle').dropdown();
+
+			$('#popover').popover();
+     		
+		)};
+	</script>
+</head>
+<body>	
+	<div class="navbar navbar-fixed-top navbar-inverse">
+	  <div class="navbar-inner">
+	  	<div class="container">
+		    <a class="brand" href="#">Bootstrap Exercise</a>
+		    <ul class="nav">
+		      <li class="active"><a href="#">Home</a></li>
+		      <li><a href="#">About</a></li>
+		      <li><a href="#">Contact</a></li>
+		      <li class="dropdown">
+			    <a class="dropdown-toggle"
+			       data-toggle="dropdown"
+			       href="#">
+			        Dropdown
+			        <b class="caret"></b>
+			      </a>
+			    <ul class="dropdown-menu">
+			      <li><a href="#">About</a></li>
+		      	  <li><a href="#">Contact</a></li>
+			    </ul>
+			  </li>
+		    </ul>
+		    <form class="navbar-search pull-right">
+				<input type="text" class="search-query" placeholder="Search" style="margin-top: 4px;">
+			</form>
+	  	</div>
+	  </div>
+	</div>
+	<div class="container">
+		<div class="row-fluid">
+			<div class="hero-unit span12"> <!-- start hero -->
+			  <div class="row">
+				<div class="span6" style="margin-top: 40px;"> <!-- start hero text -->
+				  <h1>Hello, world!</h1>
+				  <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces id content. Use it as a starting point to create something more unique.</p>
+				  <p>
+				    <a class="btn btn-primary btn-large">
+				      Learn more
+				    </a>
+				  </p>
+				</div> <!-- End hero text -->
+			    <div id="myCarousel" class="carousel slide span6"> <!-- start carousel -->
+				    <ol class="carousel-indicators">
+				     <li data-target="#myCarousel" data-slide-to="0"  class="active"></li>
+				     <li data-target="#myCarousel" data-slide-to="1"></li>
+				     <li data-target="#myCarousel" data-slide-to="2"></li>
+				   </ol>
+				   <!-- Carousel items -->
+				   <div class="carousel-inner">
+				     <div class="active item"><img src="images/01.jpg"></div>
+				     <div class="item"><img src="images/02.jpg"></div>
+				     <div class="item"><img src="images/03.jpg"></div>
+				   </div>
+				   <!-- Carousel nav -->
+				   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				   <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				</div> <!--end carousel -->
+		 	</div> <!-- end inner row -->
+		</div> <!-- end hero -->
+	</div> <!-- end outer row -->
+	<div class="row-fluid"> 
+		<div class="alert"> <!-- start alert -->
+ 	 		<button type="button" class="close" data-dismiss="alert">&times;</button>
+ 			<strong>Heads up!</strong> This alert is here to give you some info.
+		</div><!--end alert --> 
+	</div>  <!-- end row -->
+	<div class="row-fluid">
+		<div class="span9">
+			<h2>This is what we do.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a href="#myModal" role="button" class="btn" data-target="#foo" data-toggle="modal">Launch demo modal</a>	
+			<div id="foo" class="modal hide fade">
+			  <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			    <h3>Modal header</h3>
+			  </div>
+			  <div class="modal-body">
+			    <p>One fine body.</p>
+			  </div>
+			  <div class="modal-footer">
+			    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			  </div>
+			</div>	
+			</div>
+		<div class="span3">
+			<h2>Sidebar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+			<a id="popover" class="btn" data-toggle="popover" data-content="It's so simple to create a popover!" data-original-title="Twitter Bootstrap Popover" title="">Click to view a popover</a>
+		</div>
+	</div> <!-- end row -->
+	<div class="row-fluid" style="margin-top: 20px;">
+		<div class="span4">
+			<h3>Who we are.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<button class="btn">Read More</button>
+		</div>
+		<div class="span4">
+			<h3>What we do.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<button class="btn">Read More</button>
+		</div>
+		<div class="span4">
+			<h3>How we work.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<button class="btn">Read More</button>
+		</div>
+	</div> <!-- end row -->
+	<div class="row-fluid">
+		<div class="span12" style="height: 80px; background-color: rgb(110,185,210); margin: 20px 0; text-align: center;">
+			<h4>Sign up for our newsletter</h4>
+			<div class="input-prepend">
+ 			   <span class="add-on">@</span>
+ 			   <input class="span10" id="prependedInput" type="text" placeholder="email address">
+			</div>
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

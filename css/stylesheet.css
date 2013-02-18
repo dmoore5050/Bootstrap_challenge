@@ -1,0 +1,16 @@
+div
+{
+	padding: 5px 0;
+	text-align: center;
+}
+
+.span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12
+{
+	background-color: rgba(0,0,0,0.3);
+}
+
+#hgt 
+{
+	height: 120px;
+	padding: 50px 0;
+}
